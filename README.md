@@ -1,3 +1,5 @@
-# exercicios_python
+# exercicios_python  
+_PYTHON 🐍
 
-Exercícios e testes de lógica com a linguagem Python
+**Exercícios e testes de lógica com a linguagem Python
+
