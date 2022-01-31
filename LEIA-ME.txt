@@ -1,3 +1,5 @@
 Os arquivos de exercícios, podem ser utilizados para estudos.
 
 Exercícios feitos em Python
+
+Versão nova
