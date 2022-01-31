@@ -1,0 +1,62 @@
+Usando o módulo datetime
+
+import datetime
+readable = datetime.datetime.fromtimestamp(1635418574).isoformat()
+print(readable)
+# 2021-10-28T12:56:14+02:00
+
+Usando o tempo do módulo
+Outra possibilidade de usar a função ctimedo módulo time.
+
+
+import time
+readable = time.ctime(1635418574)
+# Thu Oct 28 12:56:14 2021
+
+
+Formatação
+Para um formato legível por humanos, você pode usar a função strftime.
+
+
+import time
+ts = time.gmtime()
+print(time.strftime("%Y-%m-%d %H:%M:%S", ts))
+# 2021-10-28 12:56:14
+
+print(time.strftime("%x %X", ts))
+# 10/28/21 12:56:14
+
+# Iso Format
+print(time.strftime("%c", ts))
+# Thu Oct 28 12:56:14 2021
+
+# Unix timestamp
+print(time.strftime("%s", ts))
+# 1635418574
+
+
+
+
+Diretriz	Significado
+%a	Nome abreviado do dia da semana do local.
+%A	Nome completo do dia da semana do local.
+%b	Nome abreviado do mês do local.
+%B	Nome completo do mês do local.
+%c	Representação apropriada de data e hora do local.
+%d	Dia do mês como um número decimal [01,31].
+%H	Hora (relógio de 24 horas) como um número decimal [00,23].
+%I	Hora (relógio de 12 horas) como um número decimal [01,12].
+%j	Dia do ano como um número decimal [001,366].
+%m	Mês como um número decimal [01,12].
+%M	Minuto como um número decimal [00,59].
+%p	Equivalente local de AM ou PM.
+%S	Em segundo lugar como um número decimal [00,61].
+%U	Número da semana do ano (domingo como o primeiro dia da semana) como um número decimal [00,53]. Todos os dias de um ano novo anterior ao primeiro domingo são considerados na semana 0.
+%w	Dia da semana como um número decimal [0 (domingo), 6].
+%W	Número da semana do ano (segunda-feira como o primeiro dia da semana) como um número decimal [00,53]. Todos os dias de um ano novo anterior à primeira segunda-feira são considerados na semana 0.
+%x	Representação de data apropriada do local.
+%X	Representação de tempo apropriada do local.
+%y	Ano sem século como número decimal [00,99].
+%Y	Ano com século como número decimal.
+%Z	Nome do fuso horário (sem caracteres se não houver fuso horário).
+%%	Um '%'personagem literal .
